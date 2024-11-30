@@ -26,10 +26,10 @@ STATIC_DIR=os.path.join(BASE_DIR,'static')
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY',default='django-insecure-_7&x-t=77**ry330*5tz^$li4%eo#_6ci7d1z%--2fwc5_-m0^')
+SECRET_KEY ='django-insecure-_7&x-t=77**ry330*5tz^$li4%eo#_6ci7d1z%--2fwc5_-m0^' #config('SECRET_KEY',default='django-insecure-_7&x-t=77**ry330*5tz^$li4%eo#_6ci7d1z%--2fwc5_-m0^')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG',cast=bool,default=False)
+DEBUG =False # config('DEBUG',cast=bool,default=False)
 
 ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']
 
@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'Ecartapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',  # Or 'django.db.backends.mysql', etc.
-        'NAME': config('DATABASE_NAME'),
-        'USER': config('DATABASE_USER'),
-        'PASSWORD': config('DATABASE_PASSWORD'),
-        'HOST': config('DATABASE_HOST', default='127.0.0.1'),
-        'PORT': config('DATABASE_PORT', cast=int, default=5432),
+        'NAME': 'railway',#config('DATABASE_NAME'),
+        'USER': 'postgres',#config('DATABASE_USER'),
+        'PASSWORD':'qenqiQNxADiuKAaERntDtCYCcvAeaMSs',#config('DATABASE_PASSWORD'),
+        'HOST':'autorack.proxy.rlwy.net',# config('DATABASE_HOST', default='127.0.0.1'),
+        'PORT':'54323'# config('DATABASE_PORT', cast=int, default=5432),
     }
 }
 

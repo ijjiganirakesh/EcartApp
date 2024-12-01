@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'Ecartapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DATABASE_NAME'),
-        'USER': config('DATABASE_USER'),
-        'PASSWORD':config('DATABASE_PASSWORD'),
-        'HOST':config('DATABASE_HOST', default='127.0.0.1'),
-        'PORT':config('DATABASE_PORT', cast=int, default=5432),
+        'NAME': "railway",#config('DATABASE_NAME'),
+        'USER': 'postgres',#config('DATABASE_USER'),
+        'PASSWORD':'qenqiQNxADiuKAaERntDtCYCcvAeaMSs',#config('DATABASE_PASSWORD'),
+        'HOST':'autorack.proxy.rlwy.net',#config('DATABASE_HOST', default='127.0.0.1'),
+        'PORT':'54323',#config('DATABASE_PORT', cast=int, default=5432),
     }
 }
 

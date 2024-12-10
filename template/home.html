@@ -14,7 +14,10 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to Ecarthome</h1>
-    <p>How can i help you today?</p>
+    {% for i in data %}
+    {{i.name}}
+    {{i.age}}
+    {% endfor %}
+
 </body>
 </html>
